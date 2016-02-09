@@ -84,6 +84,42 @@ audio:not([controls]) {
  * can add them to the font variables in the _base.scss partial.
  */
 
+@font-face {
+  font-family: "ColfaxWeb";
+  src: url("../webfonts/ColfaxWebRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "ColfaxWeb";
+  src: url("../webfonts/ColfaxWebRegularItalic.woff") format("woff");
+  font-style: italic;
+}
+@font-face {
+  font-family: "ColfaxWeb";
+  src: url("../webfonts/ColfaxWebLight.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "ColfaxWeb";
+  src: url("../webfonts/ColfaxWebMedium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "ColfaxWeb";
+  src: url("../webfonts/ColfaxWebBold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "ColfaxWeb";
+  src: url("../webfonts/ColfaxWebBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "ColfaxWeb";
+  src: url("../webfonts/ColfaxWebBlack.woff") format("woff");
+  font-weight: 800;
+}
+
 
 /**
  * 1. Set default font family to sans-serif.
@@ -95,7 +131,7 @@ audio:not([controls]) {
  */
 
 html {
-  font-family: "Sentinel SSm A", "Sentinel SSm B";
+  font-family: "ColfaxWeb";
   font-style: normal;
   font-weight: 400;
   font-size: 87.5%;
@@ -199,22 +235,19 @@ blockquote {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1, .h1 {
-  font-family: "Sentinel A", "Sentinel B";
   font-style: normal;  
   @extend %track-in;
   font-size: ms(3);
-  @include breakpoint($bp1) { font-size: ms(4); }
-  @include breakpoint($bp1a) { font-size: ms(5); }  
+  @include breakpoint($bp1a) { font-size: ms(4); }  
   line-height: 1.1;
   margin: 0 0 ms(-1) 0;  
-  font-weight: 700;
+  font-weight: 300;
   color: $primary;
-  &.page-title { 
-    text-align: center;
+  &.page-title {
+    font-weight: 800;
   }
 }
 h2, .h2 {  
-  font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-size: ms(1);
   line-height: 1;
@@ -223,7 +256,7 @@ h2, .h2 {
   color: $primary;
   &.section-heading {
     @extend %track-out;
-    font-size: ms(-1);
+    font-size: ms(-2);
     line-height: 1;
     margin: ms(2) 0 ms(-1) 0;
     font-weight: 800;     
@@ -232,7 +265,6 @@ h2, .h2 {
   }
 }
 h3, .h3 {
-  font-family: "Gotham SSm A", "Gotham SSm B";
   font-style: normal;  
   @extend %track-out;
   font-size: ms(-2);
@@ -247,7 +279,6 @@ h3, .h3 {
   }  
 }
 h4, .h4 {
-  font-family: "Gotham SSm A", "Gotham SSm B";
   font-style: normal;  
   @extend %track-out;
   font-size: ms(-2);
@@ -258,7 +289,6 @@ h4, .h4 {
   color: $primary;
 }
 h5, h6 {
-  font-family: "Gotham SSm A", "Gotham SSm B";
   font-style: normal;  
   @extend %track-out;
   font-size: ms(-2);
@@ -613,8 +643,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  font-family: "Gotham SSm A", "Gotham SSm B";
-  font-size: ms(-2);
+  font-size: ms(-1);
   font-weight: 400;
   margin-top: ms(1);
   /* Prevent cramped-looking tables */
