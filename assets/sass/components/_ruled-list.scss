@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Style rules for a Ruled list.
+ */
+
+.ruled-list {
+  list-style-type: none;
+  padding-left: 0;	
+  li {
+  	display: inline-block;
+  	width: 100%;
+  	line-height: 1.4;
+  	padding: ms(-1) 0 ms(-5) 0;
+  	border-top: 1px solid $primary-offwhite;
+  }
+}

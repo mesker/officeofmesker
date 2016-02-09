@@ -1,0 +1,119 @@
+/**
+ * @file
+ * Style rules for the site header.
+ */
+
+h1.site-header__title {
+  display: inline;
+  font-size: ms(-1.5); 
+  font-weight: 600;
+  letter-spacing: -0.00375em;
+}
+.site-header__mark {
+  display: inline;
+  font-size: ms(-1.5);
+  font-weight: 400;
+  margin-left: ms(-2);
+  &:link,
+  &:visited {
+    color: $primary-gray-light;
+    border-bottom: 0; 
+    @include trans($timing, ease-in-out);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary;
+    text-decoration: none;
+  }  
+}
+
+.site-header__logo {
+  display: inline-block;  
+  svg { width: 1.8rem; height: 1.8rem; }
+  &:link,
+  &:visited {
+    fill: $primary;
+    border-bottom: 0; 
+    @include trans($timing, ease-in-out);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    fill: $hover-color;
+    text-decoration: none;
+    @include transform(scale(1.15));
+  }   
+}
+
+
+.site-header-nav-list {
+  display: inline-block;
+  list-style-type: none;
+  height: 1.6rem;
+  li {
+    float: left;
+    font-size: ms(-2);  
+    line-height: 1.2;
+    padding-left: ms(3);
+    @include transform(translateY(50%));
+  
+    &:first-child {
+       padding-left: 0;   
+    } 
+  }  
+}
+.site-header-nav-list__title {
+  @extend %track-in;
+  font-weight: 600;
+  &:link,
+  &:visited { 
+    color: $black;
+    border-bottom: 0;
+    @include trans($timing, $easing);       
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $hover-color;
+    @include trans($timing, $easing);
+  }  
+}
+.site-header-nav-list__item {
+  @extend %track-in;
+  font-weight: 600;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:link,
+  &:visited {
+    color: $white;
+    border-bottom: 0;
+    @include trans($timing, $easing);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $hover-color;
+    @include trans($timing, $easing);
+  }         
+}
+
+.site-header__portfolio {
+  display: inline;
+  font-size: ms(-1.5);
+  font-weight: 400;
+  margin-left: ms(1.5);
+  &:link,
+  &:visited {
+    color: $primary-gray-light;
+    border-bottom: 0; 
+    @include trans($timing, ease-in-out);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary;
+    text-decoration: none;
+  }  
+}

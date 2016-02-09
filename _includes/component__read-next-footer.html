@@ -1,0 +1,30 @@
+<footer class="read-next">
+	{% if page.next.url %}
+		<aside style="background-color: {{ page.next.color1 }}">
+			<div class="l-container">
+				<div class="l-read-next-header read-next-header">
+					<h3 class="read-next-eyelash">read next</h3> 
+					<h1 class="read-next-title"><a href="{{ page.next.url }}">{{ page.next.summary }}</a></h1>
+				</div>
+				<div class="l-read-next-image">
+					<img class="read-next-image" src="{{ page.next.read-next-image }}" />
+				</div>
+			</div>
+		</aside>
+  {% else %}
+  {% assign lastpost = site.posts | reverse %}
+  {% for post in lastpost limit:1 %}
+		<aside style="background-color: {{ post.color1 }}">
+			<div class="l-container">
+				<div class="l-read-next-header read-next-header">
+					<h3 class="read-next-eyelash">read next</h3> 
+					<h1 class="read-next-title"><a href="{{ post.url }}">{{ post.summary }}</a></h1>
+				</div>
+				<div class="l-read-next-image">
+					<img class="read-next-image" src="{{ post.read-next-image }}" />
+				</div>
+			</div>
+		</aside>
+    {% endfor %}
+	{% endif %}
+</footer>

@@ -1,0 +1,8 @@
+/**
+ * @file
+ * Style rules for image styles.
+ */
+
+.box-shadow {
+	@include box-shadow($shadow 0px 3px 3px);
+}

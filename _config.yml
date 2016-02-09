@@ -1,0 +1,9 @@
+name: Michael Mesker, Designer.
+highlighter: pygments
+permalink: /:title
+baseurl: "/"
+url: "http://localhost:4000"
+markdown: kramdown
+
+kramdown:
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo

@@ -1,0 +1,113 @@
+/**
+ * @file
+ * Style rules for the Post headers.
+ */
+
+.post {
+  margin-bottom: 380px;  
+  @include breakpoint($bp1a) { margin-bottom: 540px; }  
+  @include breakpoint($bp2) { margin-bottom: 600px; }
+}
+.post-content {
+  position: relative;
+  z-index: 1;
+  background: $white;
+  min-height: 380px;
+  @include breakpoint($bp1a) { min-height: 540px; }  
+  @include breakpoint($bp2) { min-height: 600px; }  
+}
+
+.post-header {
+	margin-bottom: ms(3);
+}
+.post-header-image {
+  margin-bottom: ms(4);   
+}
+.post-header-row {
+	display: inline-block;
+	width: 100%;
+  font-size: ms(-1);
+  font-weight: 400;
+  vertical-align: bottom;	
+  padding: ms(-1) 0 ms(-2) 0;
+  border-top: 1px solid $primary-offwhite;
+  //&:first-child { border-top: 1px solid $primary-offwhite; }  
+  p { 
+  	margin-bottom: ms(-6);
+  	@include breakpoint($bp1a) { margin-bottom: 0; }
+  }
+}
+.post-header-row__label {
+  font-weight: 600;
+  padding-bottom: 0;
+  color: $primary-gray-light;
+}
+.post-header-row__title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+// ===================================================================
+// Index Header
+// ===================================================================
+.hello-header {
+  margin-bottom: ms(2);
+}
+
+// ===================================================================
+// Read Next
+// ===================================================================
+.read-next {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  height: 380px;
+  @include breakpoint($bp1a) { height: 540px; }  
+  @include breakpoint($bp2) { height: 600px; }  
+}
+.read-next-header {
+  text-align: center;
+  margin-top: ms(6);
+  margin-bottom: ms(6);
+}
+.l-read-next-header {
+  width: 100%;  
+  @include breakpoint($bp2) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+}
+
+.read-next-eyelash {
+  color: $white-50;
+}
+.read-next-title {
+  a:link,
+  a:visited { 
+    color: $white;
+    text-decoration: none;
+    border-bottom: 0;
+    @include trans($timing, $easing);  
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    color: $white-50;  
+    text-decoration: none;
+    @include trans($timing, $easing);
+  }  
+}
+
+.l-read-next-image {
+  @include push(1);
+  @include span(4); 
+  @include breakpoint($bp1) {
+    @include push(1.75);
+    @include span(2.5);
+  }  
+}
+.read-next-image {
+  margin-bottom: 0;   
+}

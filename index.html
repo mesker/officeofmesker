@@ -1,0 +1,48 @@
+---
+layout: default
+title: Office of Mesker
+---
+
+{% include component__site-header.html %}  
+
+<article class="l-container">
+  <img class="hello-header" src="assets/img/hello-header-image.png"/>
+  <section>
+    <div class="l-column">
+      <h2 class="section-heading">Case Studies</h2>
+    </div>
+    <ul class="ruled-list">
+      {% for post in site.categories.work %}
+      <li>
+        <div class="l-post-list-date"><p><span class="post-list-date">{{ post.published }}</span></p></div>
+        <div class="l-post-list-title"><a class="post-list-link" href="{{ post.url }}">{{ post.summary }}</a></div>
+      </li>
+      {% endfor %}
+    </ul>
+  <section>
+  <section>
+    <div class="l-column">
+      <h2 class="section-heading">Past Talks</h2>
+    </div>
+    <ul class="ruled-list">
+      <li>      
+        <div class="l-post-list-date"><span class="post-list-date">28 Apr 2014</span></div>
+        <div class="l-post-list-title"><a class="post-list-link" href="https://speakerdeck.com/mesker/leveraging-style-guides-to-enhance-client-experience">Leveraging Style Guides to Enhance Client Experience</a></div>
+      </li>
+      <li>      
+        <div class="l-post-list-date"><p><span class="post-list-date">15 Mar 2014</span></p></div>
+        <div class="l-post-list-title"><a class="post-list-link" href="https://speakerdeck.com/mesker/working-with-systems-in-responsive-web-design">Working with Systems in Responsive Web Design</a></div>
+      </li>      
+    </ul>  
+  </section>
+  <section>
+    <div class="l-column">
+      <h2 class="section-heading">About Me</h2>  
+      <p>I’m Michael Mesker, a graphic designer at <a href="http://www.nelsoncash.com">Nelson Cash</a> in Chicago. With a background in publication design, I’ve grown to specialize in creating systems for screens of all sizes. Over the last few years, I’ve worked closely with engineers and client teams on large scale redesigns for places like the University of Michigan Medical School, The Ounce of Prevention, American Public Media Group, and Barnard University.</p>
+      <h2 class="section-heading">Colophon</h2>
+      <p>This site is built with <a href="http://jekyllrb.com/">Jekyll</a> and hosted on <a href="https://pages.github.com/">Github Pages</a>. On the front-end, I make good use of the <a href="https://github.com/modularscale/modularscale-sass">Modular Scale</a> and <a href="http://susy.oddbird.net/">Susy</a> grid gems. While I consider the site a work in progress, the current design decisions are documented in a brief <a href="/style-guide">style guide</a>.</p>
+    </div>
+  </section>
+</article>
+
+{% include component__site-footer.html %}

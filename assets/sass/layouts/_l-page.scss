@@ -1,0 +1,292 @@
+/**
+ * @file
+ * Layout rules for a centered column of content.
+ */
+
+%l-container,
+.l-container {
+  //@include show-grid();
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-left: ms(2);
+  padding-right: ms(2);
+  @include clearfix(); 
+  @include breakpoint($bp1) {
+    padding-left: ms(4);
+    padding-right: ms(4);
+  }    
+}
+.l-column {  
+  @include span(full break);   
+  @include breakpoint($bp1) {
+    @include push(0.5);
+    @include span(5);
+  }
+  @include breakpoint($bp2) {
+    @include push(1);
+    @include span(4);
+  }  
+}
+
+// ===================================================================
+// Site Header
+// ===================================================================
+.l-site-header {
+  @extend %l-container;
+  padding-top: ms(2);
+  padding-bottom: ms(5);   
+  @include breakpoint($bp1) {
+    padding-top: ms(4);
+    padding-bottom: ms(8);    
+  }  
+}
+.l-site-header__logo { @include span(1); }
+.l-site-header__logo--center { text-align: center; margin-left: auto; margin-right: auto; }
+.l-site-header__title { float: right; }
+
+.l-site-header__portfolio { text-align: center; margin: 0 auto 0 auto; }
+
+// ===================================================================
+// Site Footer
+// ===================================================================
+.l-site-footer {
+  @extend %l-container;
+  padding-top: ms(4);
+  padding-bottom: ms(0);
+  @include breakpoint($bp1) {
+    padding-bottom: ms(3);    
+  }    
+}
+.l-site-footer__email { float: left; }
+.l-site-footer__social { float: right; }
+
+// ===================================================================
+// Layout adds z-index
+// ===================================================================
+.l-hover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+// ===================================================================
+// Post header layout
+// ===================================================================
+.l-post-header {
+  width: 100%;  
+  @include breakpoint($bp2) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+}
+.l-post-header-image {
+  @include span(full break);  
+  @include breakpoint($bp1) {
+    @include push(1);
+    @include span(4);
+  }  
+}
+.l-post-header-row__label {
+  @include span(full break);  
+  @include breakpoint($bp1) {  
+    @include span(1 break);
+  } 
+}
+.l-post-header-row__info {
+  @include span(full);  
+  @include breakpoint($bp1) {  
+    @include span(5 of 6 last);
+  } 
+}
+
+.l-sg-header-row__label {
+  @include span(full break);  
+  @include breakpoint($bp1) {  
+    @include span(1 break);
+  } 
+}
+.l-sg-header-row__info {
+  @include span(full);  
+  @include breakpoint($bp1) {
+    @include push(1); 
+    @include span(4 last);
+  } 
+}
+
+
+// ===================================================================
+// Post list layout
+// ===================================================================
+.l-post-list-date {
+  @include span(full break);  
+  @include breakpoint($bp1) {  
+    @include span(1 break);
+  } 
+  p { margin-bottom: 0; }
+}
+.l-post-list-title {
+  @include span(full);  
+  @include breakpoint($bp1) {  
+    @include span(5 of 6 last);
+  } 
+}
+
+// ===================================================================
+// Basic 2up layouts
+// ===================================================================
+.l-2up--1 { @include span(3); }
+.l-2up--2 { @include span(3 last); }
+
+// ===================================================================
+// Basic 3up layouts
+// ===================================================================
+.l-3up--1,
+.l-3up--2 { @include span(2); }
+.l-3up--3 { @include span(2 last); }
+
+.l-3up--1,
+.l-3up--2,
+.l-3up--3 { margin-bottom: gutter(); }
+
+
+// ===================================================================
+// Flexbox-basd section
+// ===================================================================
+%l-section,
+.l-section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding-top: 10vh;
+  //padding-bottom: 20vh;
+  @include container;
+  @include breakpoint($bp1) {
+    -webkit-flex-direction: row;
+    flex-direction: row;    
+  }
+}
+
+// ===================================================================
+// Portfolio Grid section
+// ===================================================================
+.l-portfolio-container {
+  //@include show-grid();
+  max-width: 1144px;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-left: ms(2);
+  padding-right: ms(2);
+  @include clearfix(); 
+  @include breakpoint($bp1) {
+    padding-left: ms(4);
+    padding-right: ms(4);
+  }    
+}
+.l-portfolio-grid {
+  margin-top: ms(4);
+}
+.l-portfolio-list-item {
+  @include gallery(3 of 6);
+  margin-bottom: gutter()*2;  
+  @include breakpoint($bp1) {  
+    @include gallery(2 of 6);
+  }
+}
+
+// ===================================================================
+// Client List section
+// ===================================================================
+.client-list-title { 
+  text-align: center; 
+  margin-top: ms(8);
+  margin-bottom: ms(4);
+}
+.client-list {
+  font-size: ms(-1);  
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    margin-top: ms(-4);
+    margin-bottom: ms(-4);
+  }
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: gutter(1); /* Chrome, Safari, Opera */
+  -moz-column-gap: gutter(1); /* Firefox */
+  column-gap: gutter(1);   
+  @include breakpoint($bp1a) {  
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4; 
+  }
+}
+
+// ===================================================================
+// Post List Even/Odd
+// ===================================================================
+%l-post-list-item,
+.l-post-list-item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  @include breakpoint($bp1) {
+    -webkit-flex-direction: row;
+    flex-direction: row;    
+  }
+  //-webkit-justify-content: center;
+  //justify-content: center;
+  padding-top: ms(0);
+  padding-bottom: ms(8);
+  //border-top: 1px solid $off-white;
+  @include container(show overlay);
+  @include clearfix; 
+}
+
+.l-post-list-item__image { 
+  @include span(full);
+  margin-bottom: ms(4);
+  @include breakpoint($bp1) {
+    @include span(3);
+    margin-bottom: 0;  
+    overflow-x: visible;
+  }
+}
+.l-post-list-item__text {
+  text-align: center;
+  @include span(full);
+  @include breakpoint($bp1) {
+    @include span(3 last);
+  } 
+}
+
+.l-post-list-item--even {
+  @extend %l-post-list-item;
+  flow: rtl;
+}
+.l-post-list-item__text--even {
+  text-align: center;  
+  @include span(full);
+  @include breakpoint($bp1) {
+    @include span(3);
+  } 
+}
+.l-post-list-item__image--even { 
+  @include span(full);
+  margin-bottom: ms(4);
+  @include breakpoint($bp1) {
+    //@include span(3);  
+    @include span(3 at 4 isolate);
+    margin-bottom: 0;  
+    overflow-x: visible;
+  }
+}

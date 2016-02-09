@@ -1,0 +1,39 @@
+<header class="site-header">
+  <div class="l-site-header--1">
+    <h1 class="element-invisible">{{ site.name }}</h1>
+    <a href="{{ site.url }}/index.html">
+      <div class="site-header-nav__logo" style="fill: {{ page.color }}">
+        {% include icon__logo.svg %}
+      </div>
+    </a>
+  </div>
+
+  <div class="l-site-header--2">
+    <nav class="site-header-nav">
+      <ul class="site-header-nav-list">
+        <li><a class="site-header-nav-list__item" href="{{ site.url }}/index.html">Work</a></li>
+        <li><a class="site-header-nav-list__item" href="{{ site.url }}/profile.html">Profile</a></li>
+        <li><a class="site-header-nav-list__item" href="{{ site.url }}/contact.html">Connect</a></li>                
+      </ul>
+    </nav>   
+  </div>
+</header>
+
+
+<header class="l-column site-header">
+  <div class="l-site-header-title">
+    <h1 class="element-invisible">{{ site.name }}</h1>
+    <a href="{{ site.url }}/index.html">
+      <div class="site-header-title__logo" style="fill: {{ page.color }}">
+        {% include icon__logo.svg %}
+      </div>
+    </a>
+  </div>
+ 
+  <nav class="l-site-header-nav">
+    <ul class="site-header-nav-list">
+      <li><a class="site-header-nav-list__item" href="{{ site.baseurl }}/">Case Studies</a></li>  
+      <li><a class="site-header-nav-list__item" href="{{ site.baseurl }}about/">About</a></li>
+    </ul>
+  </nav> 
+</header>

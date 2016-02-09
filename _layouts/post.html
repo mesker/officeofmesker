@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+  <nav class="l-column">
+    {% include component__site-header.html %}
+  </nav>
+
+<article class="l-container">
+  <header>  
+    <div>
+      <img class="post-list__image" src="{{ site.baseurl }}{{ page.header-image }}" alt=""/>
+    </div>
+  
+  </header>
+
+  {{ content }}
+
+</article>
+
+{% include component__site-footer.html %}
+
+  <div class="l-project-stats">
+    <div class="l-project-stats__column-1">
+      <h3 class="project-stats-heading">Origin</h3>
+      <ul class="project-stats-list">
+        <li><a href="http://www.palantir.net">Palantir.net</a></li>
+      </ul>
+
+      <h3 class="project-stats-heading">Timeframe</h3>
+      <ul class="project-stats-list">
+        <li>Autumn 2013</li>
+      </ul>   
+
+      <h3 class="project-stats-heading">Roles</h3>
+      <ul class="project-stats-list">
+        <li>User Experience</li>
+        <li>RWD Strategy</li>
+        <li>Visual Design</li>
+        <li>Systems Design</li>   
+      </ul>
+    </div>
+
+    <div class="l-project-stats__column-2">
+      <h3 class="project-stats-heading">Team</h3>
+      <ul class="project-stats-list">
+        <li><a href="https://twitter.com/robinbarre">Robin Barre</a></li>
+        <li><a href="https://twitter.com/allisonmanley">Allison Manley</a></li>
+        <li><a href="https://twitter.com/nancyessex">Nancy Essex</a></li>
+      </ul>
+
+      <h3 class="project-stats-heading">Artifacts</h3>
+      <ul class="project-stats-list">
+        <li>Wireframes</li>
+        <li><a href="http://www.palantir.net/clients/ounce/style-tiles/">Style Tiles</a></li>
+        <li>Prototypes</li>
+        <li><a href="http://mesker.github.io/ounce/">Style Guide</a></li>
+      </ul>
+    </div>
+  </div>

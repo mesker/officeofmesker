@@ -1,0 +1,142 @@
+//
+// Initialization partial
+//
+// To make it easier to use all variables and mixins in any Sass file in this
+// theme, each .scss file has a @import "init" declaration. And this _init.scss
+// file is in charge of importing all the other partials needed for the theme.
+//
+// This initialization partial is organized in this way:
+// - First we set any shared Sass variables.
+// - Next we import Compass plug-ins (Sass mixin libraries).
+// - Last we define our custom mixins for this theme.
+//
+
+
+
+
+
+
+// =============================================================================
+// Variables
+// =============================================================================
+
+//
+// Legacy IE support
+//
+// These variables are used by many mixins to add additional CSS to support
+// specific versions of IE or specific vendor prefixes.
+//
+// IE6-7 don't support box-sizing: border-box. We can fix this in 1 of 3 ways:
+// - Drop support for IE 6/7. :-) Set $legacy-support-for-ie6
+//   and $legacy-support-for-ie7 to false.
+// - (Preferred) Install the box-sizing polyfill and set the variable below to
+//   the absolute path URL to the boxsizing.htc file.
+//   @see https://github.com/Schepp/box-sizing-polyfill
+//   $box-sizing-polyfill-path: "/path/to/boxsizing.htc";
+// - Use the same CSS unit for grid and gutter width in resonsive-sidebars.scss
+//   (use px for both or use % for both) and set the box-sizing variable to content-box.
+//
+// Zen does not require special handling for IE8 or later. But Compass uses that
+// variable for a couple edge cases. We include it for completeness sake. See
+// the documentation at http://compass-style.org/reference/compass/support/
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+$legacy-support-for-ie8: true;
+
+
+//
+// Font faces, stacks and sizes.
+//
+
+// Compass' vertical_rhythm extension is a powerful tool to set up a vertical
+// rhythm for your entire page. You can see some of its mixins and functions in
+// use in the normalize.scss file.
+// @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
+
+
+//$ms-base: 1.125rem;
+$ms-base: 1rem;
+$ms-ratio: $major-third;
+
+// First, let's create some font stacks.
+$georgia: Georgia, "Times New Roman", "DejaVu Serif", serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$colfax: "ColfaxWeb", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+
+// For an explanation of why "sans-serif" is at the end of this list, see
+// http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
+$courier: menlo, "DejaVu Sans Mono", "Courier New", monospace, sans-serif;
+
+// Now create some variables for the font stacks we want to use on this site.
+$base-font-family: $colfax; // The font family set on the html element.
+$font-monospace:   $courier;
+
+// Sass color variables, etc.
+$primary: #282828;
+$black: $primary;
+$primary-text: lighten($primary, 20%);
+$primary-caption: lighten($primary, 60%);
+$primary-gray: lighten($primary, 50%);
+$primary-gray-light: lighten($primary, 60%);
+$primary-offwhite: lighten($primary, 78%);
+$text-black: #686868;
+$gray-dark: #848484;
+$shadow: #ededed;
+$gray-medium: #c4c4c4;
+$gray: #bbbbbb;
+$off-white: #f1f1f1;
+$white: #ffffff;
+$white-60: rgba($white, .60);
+$white-50: rgba($white, .50);
+$white-30: rgba($white, .30);
+$computer-blue: #0066ff;
+$link-color: lighten($primary, 70%);;
+$hover-color: $primary-gray-light;
+
+
+
+
+// Breakpoint Variables
+$bp0:  400px;
+$bp1:  550px;
+$bp1a: 750px;
+$bp2:  900px;
+$bp2a: 1040px;
+$bp3:  1220px;
+$bp4:  1280px;
+
+// Vertical spacing unit
+$slug: rhythm(8); 
+
+// The amount lists, blockquotes and comments are indented.
+$indent-amount: ms(0);
+
+// Hover state effects
+$timing: .125s;
+$easing: ease-in;
+
+// Border radius for common UI elements
+$radius: 3px;
+
+// =============================================================================
+// Partials to be shared with all .scss files.
+// =============================================================================
+
+// Add Compass' IE and vendor prefix support variables.
+@import "compass/support";
+// Better than Drupal's clearfix.
+@import "compass/utilities/general/clearfix";
+// See http://compass-style.org/help/tutorials/spriting/
+@import "compass/utilities/sprites";
+// Use one CSS3 mixin instead of multiple vendor prefixes.
+@import "compass/css3";
+// Helps set up a vertical rhythm.
+@import "compass/typography/vertical_rhythm";
+// Add the Breakpoint mixin.
+@import "breakpoint";
+// Now we add our custom helper mixins.
+@import "mixins";
+
+
+
+

@@ -1,0 +1,13 @@
+<aside class="post-list">
+  <div class="l-column">
+    <h2 class="section-heading">Other Posts</h2>
+  </div>
+  <ul class="ruled-list">
+    {% for post in site.categories.work %}  
+    <li>
+      <div class="l-post-list-date"><p><span class="post-list-date">{{ post.published }}</span></p></div>
+      <div class="l-post-list-title"><a class="post-list-link" href="{{ post.url }}">{{ post.summary }}</a></div>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>

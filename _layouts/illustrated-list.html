@@ -1,0 +1,31 @@
+<div class="l-container">
+  <header class="l-column l-section">
+    <h1>I specialize in designing systems for screens of all shapes and sizes.</h1>
+  </header>
+  <!-- Even/Odd Layout -->
+  {% for post in site.categories.work %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <article class="l-section">
+      <div class="l-post-list__image">
+        <img class="post-list__image" src="{{ site.baseurl }}{{ post.list-image }}" alt="">
+      </div>
+      <div class="l-post-list__text">
+        <h1 class="post-list__summary">{{ post.list-summary }}</h1>
+        <a class="post-list__link" href="{{ post.url }}">Read More</a>
+      </div>        
+    </article>
+    {% endif %}
+    {% if thecycle == 'even' %}
+    <article class="l-section--even">
+      <div class="l-post-list__image--even">
+        <img class="post-list__image" src="{{ site.baseurl }}{{ post.list-image }}" alt="">
+      </div>
+      <div class="l-post-list__text--even">
+        <h1 class="post-list__summary">{{ post.list-summary }}</h1>
+        <a class="post-list__link" href="{{ post.url }}">Read More</a>
+      </div> 
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>

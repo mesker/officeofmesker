@@ -1,0 +1,36 @@
+---
+layout: default
+title: Office of Mesker
+
+---
+{% include component__site-header.html %}  
+
+<div class="l-container">
+  <!-- Even/Odd Layout -->
+  {% for post in site.categories.work %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <article class="l-post-list-item">
+      <div class="l-post-list-item__image">
+        <img class="post-list-item__image" src="{{ site.baseurl }}{{ post.list-image }}" alt="">
+      </div>
+      <div class="l-post-list-item__text">
+        <h1 class="post-list-item__summary">{{ post.summary }}</h1>
+        <a class="post-list-item__link" href="{{ post.url }}">Read More</a>
+      </div>        
+    </article>
+    {% endif %}
+    {% if thecycle == 'even' %}
+    <article class="l-post-list-item--even">
+      <div class="l-post-list-item__image--even">
+        <img class="post-list-item__image" src="{{ site.baseurl }}{{ post.list-image }}" alt="">
+      </div>
+      <div class="l-post-list-item__text--even">
+        <h1 class="post-list-item__summary">{{ post.summary }}</h1>
+        <a class="post-list-item__link" href="{{ post.url }}">Read More</a>
+      </div> 
+    </article>
+    {% endif %}
+  {% endfor %}
+
+{% include component__site-footer.html %}

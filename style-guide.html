@@ -1,0 +1,123 @@
+---
+layout: default
+title: Style Guide
+summary: A working document of the current core styles
+updated: 23 April 2015
+---
+{% include component__site-header.html %}
+
+<article id="style-guide">
+  <div class="l-container">
+    <div class="l-column">
+      <header>
+        <h1 class="page-title">{{ page.title }}</h1>
+      </header> 
+      <p>This page is a working document of the current core styles. While designing this site, I used these content samples to finesse the base level styles into what they are now. For no particular reason, sample content is provided by the <a href="http://en.wikipedia.org/wiki/Panic_%28The_Smiths_song%29">Wikipedia entry</a> for The Smiths song “Panic”.</p>
+      <h2 class="styleguide-h2" id="typography">Typography</h2>
+      <p><a href="https://processtypefoundry.com/fonts/colfax/">Colfax</a> is a geometric sans serif designed by <a href="http://processtypefoundry.com/">Eric Olson</a>. With a broad range of six weights, Colfax is a workhorse typeface capable of playing many roles within a typographic system. The webfont version has been slightly hinted in order to maintain readability at smaller settings.</p>
+      <div class="sg-example-box">
+        <p>
+          <span class="sg-font-weights" style="font-weight: 200;">Aa</span>
+          <span class="sg-font-weights" style="font-weight: 300;">Bb</span>
+          <span class="sg-font-weights" style="font-weight: 400;">Cc</span>
+          <span class="sg-font-weights" style="font-weight: 500;">Dd</span>
+          <span class="sg-font-weights" style="font-weight: 600;">Ee</span>
+          <span class="sg-font-weights" style="font-weight: 800;">Ff</span>
+        </p>
+      </div>      
+
+      <h2 class="styleguide-h2" id="modular-scale">Modular Scale</h2>
+      <p>This site utilizes a <a href="http://www.modularscale.com/">modular scale</a> of major third (4:5), with a root font-size of 1rem. In the interest of being fancy, the width of the main content column is also based on a factor of the scale.</p>
+      <div class="sg-example-box">
+        <p>
+          <span class="sg-ms-2">Aa</span>
+          <span class="sg-ms-1">Bb</span>
+          <span class="sg-ms0">Cc</span>
+          <span class="sg-ms1">Dd</span>
+          <span class="sg-ms2">Ee</span>
+          <span class="sg-ms3">Ff</span>
+          <span class="sg-ms4">Gg</span>
+        </p>
+      </div>
+
+      <h2 class="styleguide-h2" id="headings">Headings</h2>
+      <h1>There’s Panic on the Streets of London</h1>
+      <h2>Panic on the Streets of Birmingham</h2> 
+      <h3>I Wonder to Myself</h3>
+      <h4>Could Life Ever be Sane Again</h4> 
+
+      <h2 class="styleguide-h2" id="paragraphs">Paragraphs</h2>
+      <p>“Panic” is a song by the British indie band <a href="http://www.rdio.com/artist/The_Smiths/">The Smiths</a>, written by singer Morrissey and guitarist Johnny Marr. The first recording to feature new member Craig Gannon, “Panic” bemoans the state of contemporary pop music, and implores its listeners to “burn down the disco” and “hang the DJ” in retaliation, refrains that led some to accuse the band of promoting racism and homophobia. The song was released by Rough Trade Records as a single in 1986, reaching number 11 in the UK Chart. It was later released on the compilation albums <a href="http://www.rdio.com/artist/The_Smiths/album/The_World_Won%27t_Listen/">The World Won’t Listen</a> and <a href="http://www.rdio.com/artist/The_Smiths/album/Louder_Than_Bombs/">Louder Than Bombs</a>.</p>
+      <p>“Panic” was recorded at London’s Livingston Studios in May 1986. It was the group’s first recording sessions since they completed work on their third album <a href="http://www.rdio.com/artist/The_Smiths/album/The_Queen_Is_Dead_1/">The Queen Is Dead</a> six months earlier. During the interim period, bassist Andy Rourke had been fired due to his drug addiction. The band hired Craig Gannon to replace him, but after they rehired Rourke, guitarist Johnny Marr offered Gannon a position as second guitarist.</p>
+      <p>The now five-piece band worked with producer John Porter at Livingston Studios; this was his first work with the group in two years. Porter added several layers of tracks by guitarists Marr and Gannon. Porter was concerned that the song was too short, so he copied the band’s first take from 5 May and spliced a repetition of the first verse at the end to increase its length. The group was unimpressed and opted to leave the song as they originally structured it.</p>
+
+      <h2 class="styleguide-h2" id="lists">Lists</h2>
+      <p>This is an un-ordered list:</p>
+      <ul>
+        <li>Dublin</li>
+        <li>Dundee</li>
+        <li>Humberside</li>
+      </ul>
+      <p>This is an ordered list:</p>
+      <ol>
+        <li>Dublin</li>
+        <li>Dundee</li>
+        <li>Humberside</li>
+      </ol>
+      <p>This is a nested, un-ordered list:</p>
+      <ul>
+        <li>On the Leeds side-streets that you slip down</li>
+        <li>Provincial towns you jog 'round
+          <ul>
+            <li>Hang the deejay!</li>
+            <li>Hang the deejay!!</li>
+            <li>Hang the deejay!!!</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2 class="styleguide-h2" id="blockquote">Blockquote</h2>
+      <p>Fletcher suggests the song was not as much about race or sexuality as it was about the culture of British popular music, he writes:</p>
+      <blockquote>... the ‘disco’ of ‘Panic’ was generally presumed to mean the longstanding city-centre meat market, which suggested exclusivity by demanding patrons wear a tie, or at least to ‘dress smart,’ but where drinks were overpriced, fights routine, and both the disc jockeys and the commercial Top 40 music that they played was almost embarrassingly disconnected from the neighbouring streets. Then again, when the Smiths performed ‘Panic’ to nearly 15,000 white American college kids, outdoors in the suburbs of Massachusetts, such reference points, vaguely stated in the first place, were easy to misconstrue.</blockquote>
+
+      <h2 class="styleguide-h2" id="links">Links</h2>
+      <p><a href="#">This is a text link</a></p>
+      <p><a class="post-list__link" href="#">Call to Action Link</a></p>
+
+      <h2 class="styleguide-h2" id="tables">Tables</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th class="project-stats__col-1">Released</th>
+            <td>21 July 1986</td>
+          </tr>
+          <tr>
+            <th class="project-stats__col-1">Format</th>
+            <td>7", 12", Compact Disc</td>
+          </tr>
+          <tr>
+            <th class="project-stats__col-1">Length</th>
+            <td>2 minutes 20 seconds</td>
+          </tr>
+          <tr>
+            <th class="project-stats__col-1">Label</th>
+            <td>Rough Trade</td>
+          </tr>
+          <tr>
+            <th class="project-stats__col-1">Producer</th>
+            <td>John Porter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="styleguide-h2" id="text-attributes">Keyboard input</h2>
+      <p>Press <kbd>&#8984;</kbd> + <kbd>H</kbd> to Hang the DJ.</p>
+    </div>
+  </div>
+</article>
+
+<aside class="l-container">
+  {% include component__sub-footer.html %}
+</aside>
+
+{% include component__site-footer.html %}

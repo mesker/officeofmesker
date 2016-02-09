@@ -1,0 +1,88 @@
+/**
+ * @file
+ * Style rules for Post lists.
+ */
+
+.post-list {
+	margin-top: ms(1);
+}
+.post-list-date {
+  font-size: ms(-1.5);
+  font-weight: 600;
+  color: $primary-gray-light;
+}
+.post-list-link {
+  font-weight: 600;
+  margin-bottom: 0;
+  letter-spacing: -0.01em;
+  &:link,
+  &:visited { 
+    color: $primary;
+    text-decoration: none;
+    border-bottom: 0;
+    @include trans($timing, $easing);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-gray-light;
+    text-decoration: none;
+    @include trans($timing, $easing);
+  } 
+  &:after {
+    content: "\2192";
+    font-size: ms(-1);
+    color: $primary-gray-light;
+    display: inline-block;
+    margin-left: ms(-3);
+    @include trans($timing, $easing);
+  }
+}
+.post-list-link:hover:after {
+  color: $primary;  
+  @include transform(translateX(0.125rem));
+  @include trans($timing, $easing);
+}
+
+
+// ===================================================================
+// Index Post List
+// ===================================================================
+.post-list-item__summary {
+  @extend %track-in-more;
+  font-size: ms(3);
+  line-height: 1.125;
+  margin: 0 0 ms(-1) 0;  
+  font-weight: 800;
+  color: $primary;
+}
+.post-list-item__link {
+  @extend %track-out;	
+	font-size: ms(-2);
+	font-weight: 600;
+  text-transform: uppercase;
+	&:link,
+	&:visited { 
+		color: $link-color;
+	  text-decoration: none;
+	  padding-bottom: 0.5em;
+		@include trans($timing, $easing);
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $hover-color;
+	  text-decoration: none;
+	  @include trans($timing, $easing);
+	}	
+	&:after {
+	  content: "\2192";
+	  display: inline-block;
+	  margin-left: 0.5em;
+		@include trans($timing, $easing);
+	}
+}
+.post-list__link:hover:after {
+	@include transform(translateX(0.125rem));
+	@include trans($timing, $easing);
+}

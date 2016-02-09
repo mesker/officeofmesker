@@ -1,0 +1,59 @@
+/**
+ * @file
+ * Style rules for the site footer.
+ */
+
+.site-footer__email,
+.site-footer__email--small {
+  @extend %track-in-more;
+  font-weight: 600;
+  line-height: 2;
+  &:link,
+  &:visited {
+    border-bottom: 0;
+    color: $primary-gray-light;
+    @include trans(.225s, ease-in-out);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary;
+  } 
+}
+.site-footer__email--small {
+  @include breakpoint($bp1) {
+    display: none;
+  }
+}
+.site-footer__email {
+  display: none;  
+  @include breakpoint($bp1) {
+    display: block;
+  }
+}
+.site-footer__social {
+  border-bottom: 0;
+}
+.site-footer__social-icon {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+  svg { width: 1.125rem; height: 1.125rem; }
+  margin-left: ms(-0.5);
+  &:first-child {
+    margin-left: 0; 
+  }
+  &:link,
+  &:visited {
+    fill: $primary-gray-light;
+    border-bottom: 0; 
+    @include trans($timing, ease-in-out);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    fill: $primary;
+    text-decoration: none;
+    @include transform(scale(1.15));
+  } 
+}
