@@ -1206,7 +1206,7 @@ tr {
   }
 }
 
-/* line 20, ../sass/layouts/_l-page.scss */
+/* line 19, ../sass/layouts/_l-page.scss */
 .l-column {
   clear: both;
   width: 100%;
@@ -1215,7 +1215,7 @@ tr {
   margin-right: 0;
 }
 @media (min-width: 550px) {
-  /* line 20, ../sass/layouts/_l-page.scss */
+  /* line 19, ../sass/layouts/_l-page.scss */
   .l-column {
     margin-left: 17.3913%;
     width: 82.6087%;
@@ -1224,7 +1224,7 @@ tr {
   }
 }
 @media (min-width: 900px) {
-  /* line 20, ../sass/layouts/_l-page.scss */
+  /* line 19, ../sass/layouts/_l-page.scss */
   .l-column {
     margin-left: 17.3913%;
     width: 65.21739%;
@@ -1233,67 +1233,67 @@ tr {
   }
 }
 
-/* line 35, ../sass/layouts/_l-page.scss */
+/* line 34, ../sass/layouts/_l-page.scss */
 .l-site-header {
   padding-top: 1.5625rem;
   padding-bottom: 1.5625rem;
 }
 @media (min-width: 550px) {
-  /* line 35, ../sass/layouts/_l-page.scss */
+  /* line 34, ../sass/layouts/_l-page.scss */
   .l-site-header {
     padding-top: 2.44141rem;
     padding-bottom: 2.44141rem;
   }
 }
 
-/* line 44, ../sass/layouts/_l-page.scss */
+/* line 43, ../sass/layouts/_l-page.scss */
 .l-site-header__logo {
   width: 13.04348%;
   float: left;
   margin-right: 4.34783%;
 }
 
-/* line 45, ../sass/layouts/_l-page.scss */
+/* line 44, ../sass/layouts/_l-page.scss */
 .l-site-header__logo--center {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 46, ../sass/layouts/_l-page.scss */
+/* line 45, ../sass/layouts/_l-page.scss */
 .l-site-header__title {
   float: right;
 }
 
-/* line 48, ../sass/layouts/_l-page.scss */
+/* line 47, ../sass/layouts/_l-page.scss */
 .l-site-header__portfolio {
   text-align: center;
   margin: 0 auto 0 auto;
 }
 
-/* line 53, ../sass/layouts/_l-page.scss */
+/* line 52, ../sass/layouts/_l-page.scss */
 .l-site-footer {
   padding-top: 2.44141rem;
   padding-bottom: 1rem;
 }
 @media (min-width: 550px) {
-  /* line 53, ../sass/layouts/_l-page.scss */
+  /* line 52, ../sass/layouts/_l-page.scss */
   .l-site-footer {
     padding-bottom: 1.95313rem;
   }
 }
 
-/* line 61, ../sass/layouts/_l-page.scss */
+/* line 60, ../sass/layouts/_l-page.scss */
 .l-site-footer__email {
   float: left;
 }
 
-/* line 62, ../sass/layouts/_l-page.scss */
+/* line 61, ../sass/layouts/_l-page.scss */
 .l-site-footer__social {
   float: right;
 }
 
-/* line 67, ../sass/layouts/_l-page.scss */
+/* line 66, ../sass/layouts/_l-page.scss */
 .l-hover {
   position: absolute;
   top: 0;
@@ -1301,12 +1301,12 @@ tr {
   z-index: 99;
 }
 
-/* line 77, ../sass/layouts/_l-page.scss */
+/* line 76, ../sass/layouts/_l-page.scss */
 .l-post-header {
   width: 100%;
 }
 @media (min-width: 900px) {
-  /* line 77, ../sass/layouts/_l-page.scss */
+  /* line 76, ../sass/layouts/_l-page.scss */
   .l-post-header {
     width: 80%;
     margin-left: auto;
@@ -1314,7 +1314,7 @@ tr {
   }
 }
 
-/* line 85, ../sass/layouts/_l-page.scss */
+/* line 84, ../sass/layouts/_l-page.scss */
 .l-post-header-image {
   clear: both;
   width: 100%;
@@ -1323,7 +1323,7 @@ tr {
   margin-right: 0;
 }
 @media (min-width: 550px) {
-  /* line 85, ../sass/layouts/_l-page.scss */
+  /* line 84, ../sass/layouts/_l-page.scss */
   .l-post-header-image {
     margin-left: 17.3913%;
     width: 65.21739%;
@@ -1332,7 +1332,7 @@ tr {
   }
 }
 
-/* line 92, ../sass/layouts/_l-page.scss */
+/* line 91, ../sass/layouts/_l-page.scss */
 .l-post-header-row__label {
   clear: both;
   width: 100%;
@@ -1341,7 +1341,7 @@ tr {
   margin-right: 0;
 }
 @media (min-width: 550px) {
-  /* line 92, ../sass/layouts/_l-page.scss */
+  /* line 91, ../sass/layouts/_l-page.scss */
   .l-post-header-row__label {
     clear: both;
     width: 13.04348%;
@@ -1350,7 +1350,7 @@ tr {
   }
 }
 
-/* line 98, ../sass/layouts/_l-page.scss */
+/* line 97, ../sass/layouts/_l-page.scss */
 .l-post-header-row__info {
   width: 100%;
   float: left;
@@ -1358,7 +1358,7 @@ tr {
   margin-right: 0;
 }
 @media (min-width: 550px) {
-  /* line 98, ../sass/layouts/_l-page.scss */
+  /* line 97, ../sass/layouts/_l-page.scss */
   .l-post-header-row__info {
     width: 82.6087%;
     float: right;
@@ -1366,7 +1366,7 @@ tr {
   }
 }
 
-/* line 105, ../sass/layouts/_l-page.scss */
+/* line 104, ../sass/layouts/_l-page.scss */
 .l-sg-header-row__label {
   clear: both;
   width: 100%;
@@ -1375,7 +1375,7 @@ tr {
   margin-right: 0;
 }
 @media (min-width: 550px) {
-  /* line 105, ../sass/layouts/_l-page.scss */
+  /* line 104, ../sass/layouts/_l-page.scss */
   .l-sg-header-row__label {
     clear: both;
     width: 13.04348%;
@@ -1384,7 +1384,7 @@ tr {
   }
 }
 
-/* line 111, ../sass/layouts/_l-page.scss */
+/* line 110, ../sass/layouts/_l-page.scss */
 .l-sg-header-row__info {
   width: 100%;
   float: left;
@@ -1392,7 +1392,7 @@ tr {
   margin-right: 0;
 }
 @media (min-width: 550px) {
-  /* line 111, ../sass/layouts/_l-page.scss */
+  /* line 110, ../sass/layouts/_l-page.scss */
   .l-sg-header-row__info {
     margin-left: 17.3913%;
     width: 65.21739%;
@@ -1401,7 +1401,7 @@ tr {
   }
 }
 
-/* line 123, ../sass/layouts/_l-page.scss */
+/* line 122, ../sass/layouts/_l-page.scss */
 .l-post-list-date {
   clear: both;
   width: 100%;
@@ -1410,7 +1410,7 @@ tr {
   margin-right: 0;
 }
 @media (min-width: 550px) {
-  /* line 123, ../sass/layouts/_l-page.scss */
+  /* line 122, ../sass/layouts/_l-page.scss */
   .l-post-list-date {
     clear: both;
     width: 13.04348%;
@@ -1418,12 +1418,12 @@ tr {
     margin-right: 4.34783%;
   }
 }
-/* line 128, ../sass/layouts/_l-page.scss */
+/* line 127, ../sass/layouts/_l-page.scss */
 .l-post-list-date p {
   margin-bottom: 0;
 }
 
-/* line 130, ../sass/layouts/_l-page.scss */
+/* line 129, ../sass/layouts/_l-page.scss */
 .l-post-list-title {
   width: 100%;
   float: left;
@@ -1431,7 +1431,7 @@ tr {
   margin-right: 0;
 }
 @media (min-width: 550px) {
-  /* line 130, ../sass/layouts/_l-page.scss */
+  /* line 129, ../sass/layouts/_l-page.scss */
   .l-post-list-title {
     width: 82.6087%;
     float: right;
@@ -1439,21 +1439,21 @@ tr {
   }
 }
 
-/* line 140, ../sass/layouts/_l-page.scss */
+/* line 139, ../sass/layouts/_l-page.scss */
 .l-2up--1 {
   width: 47.82609%;
   float: left;
   margin-right: 4.34783%;
 }
 
-/* line 141, ../sass/layouts/_l-page.scss */
+/* line 140, ../sass/layouts/_l-page.scss */
 .l-2up--2 {
   width: 47.82609%;
   float: right;
   margin-right: 0;
 }
 
-/* line 146, ../sass/layouts/_l-page.scss */
+/* line 145, ../sass/layouts/_l-page.scss */
 .l-3up--1,
 .l-3up--2 {
   width: 30.43478%;
@@ -1461,21 +1461,21 @@ tr {
   margin-right: 4.34783%;
 }
 
-/* line 148, ../sass/layouts/_l-page.scss */
+/* line 147, ../sass/layouts/_l-page.scss */
 .l-3up--3 {
   width: 30.43478%;
   float: right;
   margin-right: 0;
 }
 
-/* line 150, ../sass/layouts/_l-page.scss */
+/* line 149, ../sass/layouts/_l-page.scss */
 .l-3up--1,
 .l-3up--2,
 .l-3up--3 {
   margin-bottom: 4.34783%;
 }
 
-/* line 158, ../sass/layouts/_l-page.scss */
+/* line 157, ../sass/layouts/_l-page.scss */
 .l-section {
   display: -webkit-flex;
   display: flex;
@@ -1488,21 +1488,21 @@ tr {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .l-section:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (min-width: 550px) {
-  /* line 158, ../sass/layouts/_l-page.scss */
+  /* line 157, ../sass/layouts/_l-page.scss */
   .l-section {
     -webkit-flex-direction: row;
     flex-direction: row;
   }
 }
 
-/* line 178, ../sass/layouts/_l-page.scss */
+/* line 177, ../sass/layouts/_l-page.scss */
 .l-portfolio-container {
   max-width: 1144px;
   margin-left: auto;
@@ -1513,57 +1513,57 @@ tr {
   *zoom: 1;
 }
 @media (min-width: 550px) {
-  /* line 178, ../sass/layouts/_l-page.scss */
+  /* line 177, ../sass/layouts/_l-page.scss */
   .l-portfolio-container {
     padding-left: 2.44141rem;
     padding-right: 2.44141rem;
   }
 }
 
-/* line 191, ../sass/layouts/_l-page.scss */
+/* line 189, ../sass/layouts/_l-page.scss */
 .l-portfolio-grid {
   margin-top: 2.44141rem;
 }
 
-/* line 194, ../sass/layouts/_l-page.scss */
+/* line 192, ../sass/layouts/_l-page.scss */
 .l-portfolio-list-item {
   width: 47.82609%;
   float: left;
   margin-bottom: 8.69565%;
 }
-/* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/language/susy/_gallery.scss */
+/* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
 .l-portfolio-list-item:nth-child(2n + 1) {
   margin-left: 0;
   margin-right: -100%;
   clear: both;
   margin-left: 0;
 }
-/* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/language/susy/_gallery.scss */
+/* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
 .l-portfolio-list-item:nth-child(2n + 2) {
   margin-left: 52.17391%;
   margin-right: -100%;
   clear: none;
 }
 @media (min-width: 550px) {
-  /* line 194, ../sass/layouts/_l-page.scss */
+  /* line 192, ../sass/layouts/_l-page.scss */
   .l-portfolio-list-item {
     width: 30.43478%;
     float: left;
   }
-  /* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/language/susy/_gallery.scss */
+  /* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
   .l-portfolio-list-item:nth-child(3n + 1) {
     margin-left: 0;
     margin-right: -100%;
     clear: both;
     margin-left: 0;
   }
-  /* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/language/susy/_gallery.scss */
+  /* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
   .l-portfolio-list-item:nth-child(3n + 2) {
     margin-left: 34.78261%;
     margin-right: -100%;
     clear: none;
   }
-  /* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/language/susy/_gallery.scss */
+  /* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
   .l-portfolio-list-item:nth-child(3n + 3) {
     margin-left: 69.56522%;
     margin-right: -100%;
@@ -1571,14 +1571,14 @@ tr {
   }
 }
 
-/* line 205, ../sass/layouts/_l-page.scss */
+/* line 203, ../sass/layouts/_l-page.scss */
 .client-list-title {
   text-align: center;
   margin-top: 5.96046rem;
   margin-bottom: 2.44141rem;
 }
 
-/* line 210, ../sass/layouts/_l-page.scss */
+/* line 208, ../sass/layouts/_l-page.scss */
 .client-list {
   font-size: 0.8rem;
   list-style-type: none;
@@ -1594,13 +1594,13 @@ tr {
   /* Firefox */
   column-gap: 33.33333%;
 }
-/* line 214, ../sass/layouts/_l-page.scss */
+/* line 212, ../sass/layouts/_l-page.scss */
 .client-list li {
   margin-top: 0.4096rem;
   margin-bottom: 0.4096rem;
 }
 @media (min-width: 750px) {
-  /* line 210, ../sass/layouts/_l-page.scss */
+  /* line 208, ../sass/layouts/_l-page.scss */
   .client-list {
     -webkit-column-count: 4;
     /* Chrome, Safari, Opera */
@@ -1610,7 +1610,7 @@ tr {
   }
 }
 
-/* line 234, ../sass/layouts/_l-page.scss */
+/* line 232, ../sass/layouts/_l-page.scss */
 .l-post-list-item--even,
 .l-post-list-item {
   display: -webkit-flex;
@@ -1628,74 +1628,22 @@ tr {
   *zoom: 1;
 }
 @media (min-width: 550px) {
-  /* line 234, ../sass/layouts/_l-page.scss */
+  /* line 232, ../sass/layouts/_l-page.scss */
   .l-post-list-item--even,
   .l-post-list-item {
     -webkit-flex-direction: row;
     flex-direction: row;
   }
 }
-/* line 12, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .l-post-list-item--even:after,
 .l-post-list-item:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 65, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/language/susy/_background.scss */
-head {
-  display: block;
-  position: fixed;
-  right: 10px;
-  top: 10px;
-  z-index: 999;
-  color: #333;
-  background: rgba(255, 255, 255, 0.25);
-}
-/* line 66, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/language/susy/_background.scss */
-head:before {
-  content: "|||";
-  display: block;
-  padding: 5px 10px;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-/* line 67, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/language/susy/_background.scss */
-head:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: red;
-}
-/* line 71, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/language/susy/_background.scss */
-head:hover ~ .l-post-list-item--even, head:hover ~ body .l-post-list-item--even, head:hover ~
-.l-post-list-item, head:hover ~ body
-.l-post-list-item {
-  position: relative;
-}
-/* line 74, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.2.3/sass/susy/language/susy/_background.scss */
-head:hover ~ .l-post-list-item--even:before, head:hover ~ body .l-post-list-item--even:before, head:hover ~
-.l-post-list-item:before, head:hover ~ body
-.l-post-list-item:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  content: " ";
-  z-index: 998;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(75%, rgba(179, 179, 255, 0.25)), color-stop(75%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 75%, rgba(0, 0, 0, 0) 75%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 75%, rgba(0, 0, 0, 0) 75%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 75%, rgba(0, 0, 0, 0) 75%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-size: 17.3913%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
-}
 
-/* line 255, ../sass/layouts/_l-page.scss */
+/* line 253, ../sass/layouts/_l-page.scss */
 .l-post-list-item__image {
   width: 100%;
   float: left;
@@ -1704,7 +1652,7 @@ head:hover ~ .l-post-list-item--even:before, head:hover ~ body .l-post-list-item
   margin-bottom: 2.44141rem;
 }
 @media (min-width: 550px) {
-  /* line 255, ../sass/layouts/_l-page.scss */
+  /* line 253, ../sass/layouts/_l-page.scss */
   .l-post-list-item__image {
     width: 47.82609%;
     float: left;
@@ -1714,7 +1662,7 @@ head:hover ~ .l-post-list-item--even:before, head:hover ~ body .l-post-list-item
   }
 }
 
-/* line 264, ../sass/layouts/_l-page.scss */
+/* line 262, ../sass/layouts/_l-page.scss */
 .l-post-list-item__text {
   text-align: center;
   width: 100%;
@@ -1723,7 +1671,7 @@ head:hover ~ .l-post-list-item--even:before, head:hover ~ body .l-post-list-item
   margin-right: 0;
 }
 @media (min-width: 550px) {
-  /* line 264, ../sass/layouts/_l-page.scss */
+  /* line 262, ../sass/layouts/_l-page.scss */
   .l-post-list-item__text {
     width: 47.82609%;
     float: right;
@@ -1731,12 +1679,12 @@ head:hover ~ .l-post-list-item--even:before, head:hover ~ body .l-post-list-item
   }
 }
 
-/* line 272, ../sass/layouts/_l-page.scss */
+/* line 270, ../sass/layouts/_l-page.scss */
 .l-post-list-item--even {
   flow: rtl;
 }
 
-/* line 276, ../sass/layouts/_l-page.scss */
+/* line 274, ../sass/layouts/_l-page.scss */
 .l-post-list-item__text--even {
   text-align: center;
   width: 100%;
@@ -1745,7 +1693,7 @@ head:hover ~ .l-post-list-item--even:before, head:hover ~ body .l-post-list-item
   margin-right: 0;
 }
 @media (min-width: 550px) {
-  /* line 276, ../sass/layouts/_l-page.scss */
+  /* line 274, ../sass/layouts/_l-page.scss */
   .l-post-list-item__text--even {
     width: 47.82609%;
     float: left;
@@ -1753,7 +1701,7 @@ head:hover ~ .l-post-list-item--even:before, head:hover ~ body .l-post-list-item
   }
 }
 
-/* line 283, ../sass/layouts/_l-page.scss */
+/* line 281, ../sass/layouts/_l-page.scss */
 .l-post-list-item__image--even {
   width: 100%;
   float: left;
@@ -1762,7 +1710,7 @@ head:hover ~ .l-post-list-item--even:before, head:hover ~ body .l-post-list-item
   margin-bottom: 2.44141rem;
 }
 @media (min-width: 550px) {
-  /* line 283, ../sass/layouts/_l-page.scss */
+  /* line 281, ../sass/layouts/_l-page.scss */
   .l-post-list-item__image--even {
     width: 47.82609%;
     float: left;

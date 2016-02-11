@@ -5,7 +5,6 @@
 
 %l-container,
 .l-container {
-  //@include show-grid();
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto; 
@@ -176,7 +175,6 @@
 // Portfolio Grid section
 // ===================================================================
 .l-portfolio-container {
-  //@include show-grid();
   max-width: 1144px;
   margin-left: auto;
   margin-right: auto; 
@@ -248,7 +246,7 @@
   padding-top: ms(0);
   padding-bottom: ms(8);
   //border-top: 1px solid $off-white;
-  @include container(show overlay);
+  @include container;
   @include clearfix; 
 }
 
