@@ -2166,9 +2166,9 @@ h1.site-header__title {
  */
 /* line 6, ../sass/components/_images.scss */
 .box-shadow {
-  -moz-box-shadow: #ededed 0px 3px 3px;
-  -webkit-box-shadow: #ededed 0px 3px 3px;
-  box-shadow: #ededed 0px 3px 3px;
+  -moz-box-shadow: #ededed 0px 12px 22px;
+  -webkit-box-shadow: #ededed 0px 12px 22px;
+  box-shadow: #ededed 0px 12px 22px;
 }
 
 /* line 10, ../sass/components/_images.scss */
